@@ -17,27 +17,29 @@ body {
 
 header{
     display:flex;
-    justify-content: center;
-    padding: 13px;
+    justify-content: space-around;
     background-color: #F6F6F7;
+    height: 10vh;
+    width: 100vw;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .headerLogoGX2{
+    transition: 0.5s;
     transform: scale(0.5);
     display: flex;
     align-self: center;
-    margin: 1% 1% 150px;
 }
 
 .containerMenu{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    width: 50%;
+    width: 35vw;
     align-items: center;
     align-content: center;
-    justify-content: space-evenly;
-    margin-bottom: 140px;
+    justify-content: space-around;
 }
 
 .linksmenu{
@@ -66,8 +68,8 @@ header{
     justify-content: center;
     font-size:15px;
     font-family:Arial;
-    width:140px;
-    height:50px;
+    width: 13vw;
+    height: 5vh;
     border-width:2px;
     color:rgba(255, 255, 255, 1);
     border-color:rgba(25, 219, 209, 1);
@@ -78,12 +80,305 @@ header{
     border-bottom-right-radius:33px;
     box-shadow: 1px 1px 0px 1px rgba(255, 255, 255, 1);
     background:rgba(25, 219, 209, 1);
-  }
+}
   
-  .buttonClass:hover {
+.buttonClass:hover {
     background: rgba(255, 255, 255, 1);
     color:rgba(25, 219, 209, 1);
-  }
+}
 
+main {
+    display: flex;
+    flex-direction: column;
+}
 
+#background {
+    width: 100%;
+    height: 50vh;
+    background-image: url(imgs/Background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 20px 0px;
+}
 
+.containerIntroduction {
+    width: 65%;
+    height: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.leftIntroduction {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.leftIntroduction img {
+    width: 20%;
+    object-fit: cover;
+}
+
+.leftIntroduction h1 {
+    font-size: max(24px, 2.5vw);
+    color: #FFFFFF;
+    line-height: 150%;
+    margin-top: 10px;
+}
+
+.leftIntroduction p {
+    font-size: max(18px, 1.3vw);
+    font-weight: 200;
+    color: #FFFFFF;
+    line-height: 180%;
+    margin-top: 0px;
+}
+
+.rightIntroduction {
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.logoRocketBig {
+    width: 100px;
+    height: 113px;
+    margin-bottom: 30px;
+}
+
+.logoRocketTalentsBig {
+    width: 260px;
+    height: 60px;
+}
+
+#containerAboutProgram {
+    background-color: #FFFFFF;
+    height: 100%;
+    padding: 1%;
+}
+
+.containerAboutProgram{
+    display: flex;
+    justify-content: center;
+}
+
+.leftCard{
+    width: 30%;
+    align-self: center;
+    padding: 1%;
+    flex-wrap: wrap;
+}
+
+.leftCard h2{
+    line-height: 120%;
+    font-size: max(30px, 2vw);
+    color: #032624;
+    padding: 2% 0%;
+}
+
+.leftCard p{
+    line-height: 120%;
+    font-size: max(16px, 1.2vw);
+    color: #032624;
+    padding: 2% 0%;
+}
+
+span{
+    font-size: max(16px, 1vw);
+    color: #0EAFAC;;
+}
+
+.manImageBig{
+    width: 50%;
+}
+
+.rightCard{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1%;
+}
+
+#containerHowWorks{
+    background-color: #f9fcfd;
+    height: 100%;
+    padding: 1%;
+}
+
+.containerHowWorks{
+    display: flex;
+    justify-content: center;
+}
+
+.captionHowWorks{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.align{
+    text-align: center;
+}
+
+.captionHowWorks h2{
+    display: flex;
+    font-size: max(40px, 2vw);
+    color: #31b6b4;
+    align-items: center;
+    justify-content: center;  
+}
+
+.captionHowWorks p{
+    line-height: 150%;
+    font-size: max(18px, 1vw);
+    color: #1c5552;
+    flex-wrap: wrap;
+    word-break: break-word;
+    align-items: center;
+}
+
+.parent-block{
+    display: flex;
+    padding: 2% 0%;
+}
+
+.block{
+    width: 250px;
+    height: 250px;
+    margin: 1% 1%;
+    padding: 1%;
+    box-shadow: 0px 0px 10px 2px rgb(197, 197, 197);
+}
+
+#detailsContainer {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    width: 60vw;
+    align-items: center;
+    margin: 0 auto;
+    color: #032624;
+    font-size: 16px;
+    
+}
+
+#detailsRequirements {
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    height: 50%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#detailsRequirements h2,
+#detailsImportant h2 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #0eafac;
+}
+
+#detailsRequirements p,
+#detailsImportant p {
+    font-weight: 600;
+}
+
+#detailsRequirementsContent {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#detailsRequirements img {
+    transform: scale(0.5);
+}
+
+#importantDetails {
+    display: flex;
+    width: 100%;
+    height: 50%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#importantDetailsContent {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.manImage2Big{
+    transform: scale(0.5);
+}
+
+.receive-news {
+    background-color: #19DBD1;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 6%;
+    grid-template-rows: auto;
+    line-height: normal;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.receive-news-text h2 {
+    margin: 0px 100px;
+    font-weight: 700;
+    font-size: 2.15em;
+}
+
+.div-receive-news-text {
+    margin: 0;
+}
+
+.receive-news-text p {
+    margin: 10px 100px 0px;
+    font-size: 1.1em;
+}
+
+.form label {
+    font-weight: 600;
+}
+
+#email {
+    display: block;
+    border-radius: 10px;
+    width: 60%;
+    outline: none;
+    border: transparent;
+    margin: .2em 0 1em 0;
+    height: 1.8em;
+}
+
+.button-orange {
+    border-radius: 10px;
+    color: white;
+    background-color: #FFB900;
+    border: 1px solid transparent;
+    padding: .5em 1.25em;
+    font-size: .9em;
+    font-weight: 600;
+    margin: 1em 0;
+    box-sizing: border-box;
+}
