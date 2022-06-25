@@ -382,3 +382,102 @@ span{
     margin: 1em 0;
     box-sizing: border-box;
 }
+
+#footerLinks {
+    display: flex;
+    width: 100vw;
+    height: 70vh;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #fff;
+    background-color: #04254c;
+}
+
+#footerGX2Resume {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    width: 30vw;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-left: 15px;
+    line-height: 140%;
+}
+
+#footerGX2Resume a {
+    align-content: center;
+    display: flex;
+    width: 40%;
+    height: 15%;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    background-color: #ffb900;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    transition: 1s;
+}
+
+.phone{
+    transform: scale(0.5);
+    
+}
+
+#footerGX2Resume a:hover {
+    transition: 1s;
+    box-shadow: 1px 1px 10px #ffb900;
+    transform: scale(1.1);
+}
+
+#servicesGX2 {
+    display: flex;
+    height: 70%;
+    width: 10vw;
+}
+
+#servicesList {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style-type: none;
+    padding: 0;
+    row-gap: 10px;
+    line-height: 150%;
+}
+
+.servicesListTitle {
+    font-size: 24px;
+}
+
+#address {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    width: 40vw;
+}
+
+.addressLocations {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: left;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.addressLocations li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.ponteiro {
+    background-color: #fff;
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    margin-right: 50px;
+    padding: 15px;
+}
