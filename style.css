@@ -95,7 +95,7 @@ main {
 #background {
     width: 100%;
     height: 50vh;
-    background-image: url(imgs/Background.png);
+    background-image: url(imgs/backgroundBig.png);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -311,10 +311,12 @@ span{
 }
 
 #importantDetails {
-    display: flex;
+    margin-left: 100px;
+    display: inline-flex;
     width: 100%;
     height: 50%;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 0px;
     align-items: center;
 }
 
@@ -422,7 +424,6 @@ span{
 
 .phone{
     transform: scale(0.5);
-    
 }
 
 #footerGX2Resume a:hover {
